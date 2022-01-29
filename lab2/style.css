@@ -1,0 +1,64 @@
+.grey {
+    background-color: lightgrey;
+  }
+  
+  #first_block {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+  
+  #second_block {
+    width: auto;
+    border: 10px dashed red;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  #third_block {
+    width: 40%;
+    border: 5px double blue;
+    padding: 20px;
+    margin: 20px;
+  }
+
+
+a:link {
+    color: red;
+  }
+  
+
+a:visited {
+    color: green;
+  }
+  
+a:hover {
+    color: hotpink;
+  }
+  
+a:active {
+    color: blue;
+  }
+  
+  
+  
+  td, th, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  table table tr td{
+    color:#ff6347;
+  }
+  
+  td h3{
+    background-color: #ff9999;
+    color: black;
+  }
+  
+  h3{
+    background-color:  #00b33c;
+    color: white;
+    border: 3px solid black;
+  }
