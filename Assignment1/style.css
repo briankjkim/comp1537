@@ -1,0 +1,121 @@
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+
+
+#header {
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+    background-color: lavenderblush;
+    text-align: center;
+
+}
+
+
+#sidebar {
+    background-color: aliceblue;
+    width: 15%;
+    float: left;
+    height: 100%;
+    padding: auto;
+
+}
+
+#main {
+    background-color: aliceblue;
+    width: 85%;
+    float: right;
+    padding: auto;
+
+}
+
+#wiki_header {
+    overflow: visible;
+    padding-left: 7px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #a2a9b1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+
+}
+
+#wiki_subheader {
+    font-size: 92%;
+    padding-top: 10px;
+    padding-left: 9px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: block;
+    font-family: sans-serif;
+
+}
+
+#searchbar {
+    background-color: lavenderblush;
+    width: 10%;
+    height: 2em;
+    box-sizing: border-box;
+    border: 3px solid aquamarine;
+    border-radius: 3px;
+    float: right;
+    clear: right;
+}
+
+
+#profile {
+    border: thick double black;
+    border-spacing: 3px;
+    background-color: red;
+    float: right;
+    clear: right;
+    text-align: center;
+    color: blueviolet;
+    width: 22em;
+    display: block;
+}
+
+.para {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 9px;
+    margin-inline-end: 5px;
+    display: block;
+    
+}
+
+
+#contents_list {
+    display: table;
+    margin-left: 9px;
+    padding: 10px;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    font-size: 95%;
+}
+
+
+#image_container {
+    display: block;
+    float: right;
+    border: 1px solid #c8ccd1;
+    background-color: #f8f9fa;
+    padding: 3px;
+    overflow: hidden;
+    min-width: 100px;
+    font-size: 80%;
+
+}
+
+
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: #ACD1AF;
+
+}
