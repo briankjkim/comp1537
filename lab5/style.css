@@ -1,4 +1,4 @@
-#body {
+body {
     margin: 0px;
 }
 
@@ -52,7 +52,7 @@
     float: left;
     padding: 10px;
 
-    color: lavenderblush;
+    color: red;
     text-decoration: none;
 
     padding: 14px 16px;
