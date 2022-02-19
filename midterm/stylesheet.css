@@ -1,0 +1,172 @@
+.body {
+    margin: 0px;
+}
+
+header {
+    border-top: 1px solid lavenderblush;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+
+}
+
+
+.nav {
+
+    background-color: #333;
+    overflow: hidden;
+
+
+}
+
+#main {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: beige;
+}
+
+blockquote {
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: .01em;
+    line-height: 1.4em;
+    text-transform: none;
+}
+
+.textbox {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    
+
+
+}
+.img{
+    border-radius: 5px;
+}
+
+#content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix::after {
+    clear: both;
+    
+}
+
+.nav a.one {
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    color: #f2f2f2;
+
+    padding: 14px 16px;
+    text-align: center;
+    width: 10%;
+
+}
+
+.nav a.two {
+    float: right;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    color: #f2f2f2;
+
+    padding: 14px 16px;
+    text-align: center;
+    width: 10%;
+
+}
+
+.nav a:hover {
+    background-color: f2f2f2;
+    color: #333;
+}
+
+.nav #brand {
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+    padding: 14px 16px;
+    background-color: blanchedalmond;
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 550px) {
+    .img-container {
+        width: 100%;
+        float: none;
+        padding: 10px 0px 10px 0px;
+    }
+    #center{
+        width: 100%;
+    }
+    nav a.one{
+        width: 100%;
+        float: none !important;
+        display: none;
+    }
+    nav a.two{
+        width: 100%;
+        float: none !important;
+        display: none;
+    }
+    nav #brand{
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .textbox{
+        
+    }
+    
+}
+
+.h1 {
+    margin: 0px;
+}
+
+#footer,
+#header {
+    text-align: center;
+    clear: both;
+}
+#main{
+    margin-bottom: 30px;
+}
+
+#footer #socialmedia{
+    text-align: center;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
