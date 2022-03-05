@@ -2,7 +2,7 @@ function calculate(operation) {
     first_num = parseInt(jQuery('#x').val());
     second_num = parseInt(jQuery('#y').val());
     font_boi = $("history").css("font-size");
-    button_code = "<button class='remove_class'>DEL</button>";
+    button_code = "<button class='remove'>DEL</button>";
 
     switch (operation) {
         case "add":
@@ -36,13 +36,14 @@ function calculate(operation) {
             styled_result = "<span id='mod_color'>" + text + result + button_code + "</span>";
             break;
         case "inc":
-            font_boi = font_boi + 1
-            $("#history").css("font-size", font_boi)
-        case "dec":            
-            font_boi = font_boi - 1
-            $("#history").css("font-size", font_boi)
+            console.log(parseInt(font_boi));
+            font_boi = parseInt(font_boi);
+            $("#history").css("font-size", (font_boi + 10) + "px");
+        case "dec":
+            font_boi = parseInt(font_boi);
+            $("#history").css("font-size", (font_boi - 10) + "px");
         default:
-            result = "Thou Shalt Not Do So!"
+            result = "Thou Shalt Not Do So!";
             console.log("ERRORROROR");
 
     }
@@ -55,16 +56,31 @@ function calculate(operation) {
     jQuery('#history').append(styled_result + '<br>');
 }
 
-function hide() {
-    $(this).parent().remove();
+
+hide = function () {
+    jQuery('#history').hide()
+
+}
+
+show = function () {
+    jQuery('#history').show()
+}
+
+
+erase = function () {
+    jQuery(this).parent().remove();
 }
 
 setup = function () {
-    jQuery('.button').click(
+    jQuery('.calc').click(
         function () {
             calculate(this.id);
         });
-    $('body').on("click", '.remove_class', hide);
+    jQuery('.show#show').click(show);
+    jQuery('.show#hide').click(hide);       
+    
+    $('body').on("click", '.remove', erase);
+
 }
 
 
