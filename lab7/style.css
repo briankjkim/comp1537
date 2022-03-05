@@ -48,7 +48,7 @@ h2 {
     justify-content: space-between;
 }
 
-button.button {
+button {
     font-size: 20px;
     font-weight: bold;
     width: 36px;
@@ -56,7 +56,7 @@ button.button {
     border-radius: 8px;
 }
 
-button.show_button {
+button.show {
     font-size: 10px;
     font-weight: bold;
     width: 48px;
@@ -97,34 +97,39 @@ button.show_button {
     width: max-content;
 }
 
-button.button#add {
+button.calc#add, #add_color {
     background-color: fuchsia;
 }
 
-button.button#sub {
+button.calc#sub, #sub_color{
     background-color: indianred;
 }
 
-button.button#mul {
+button.calc#mul, #mul_color{
     background-color: mediumaquamarine;
 }
 
-button.button#div {
+button.calc#div, #div_color{
     background-color: slategrey;
 }
 
-button.button#exp {
+button.calc#exp, #exp_color{
     background-color: yellowgreen;
 }
 
-button.button#mod {
+button.calc#mod, #mod_color{
     background-color: steelblue;
 }
 
-button.button#inc {
+button.calc#inc {
     background-color: gainsboro;
 }
 
-button.button#dec {
+button.calc#dec {
     background-color: hotpink;
+}
+
+button.remove {
+    background-color: chocolate;
+    font-size: 12px;
 }
