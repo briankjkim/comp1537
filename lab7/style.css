@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#magic_calc {
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    border: 2px solid darkmagenta;
+    border-radius: 25px;
+    background-color: darkcyan;
+    box-shadow: 12px 6px 8px rgb(138, 138, 138);
+}
+
+h1,
+h2 {
+    padding: 5px;
+}
+
+#title_box {
+    background-color: lavenderblush;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.operand {
+    margin: 15px 0;
+}
+
+.operand label {
+    display: inline-block;
+    font-size: 16px;
+    text-align: right;
+    width: 60%;
+}
+
+.operand input {
+    font-size: 18px;
+    width: 3em;
+    text-align: center;
+}
+
+#buttons_display {
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.button {
+    font-size: 20px;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+button.show_button {
+    font-size: 10px;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: darkkhaki;
+}
+
+#result_box {
+    margin: 20px 0 20px;
+    padding: 0.5em 0.7em;
+    height: 54px;
+    font-size: 16px;
+    background-color: goldenrod;
+    box-shadow: inset 3px 2px 3px rgb(138, 138, 138);
+    border-radius: 5px;
+}
+
+#result {
+    height: fit-content;
+}
+
+#history_box {
+    height: fit-content;
+    max-width: 100%;
+    background-color: gray;
+    border: 2px solid lavenderblush;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#history {
+    height: 250px;
+    overflow: auto;
+    padding: 4.5px;
+    font-size: 13px;
+    margin-top: 1px;
+    width: max-content;
+}
+
+button.button#add {
+    background-color: fuchsia;
+}
+
+button.button#sub {
+    background-color: indianred;
+}
+
+button.button#mul {
+    background-color: mediumaquamarine;
+}
+
+button.button#div {
+    background-color: slategrey;
+}
+
+button.button#exp {
+    background-color: yellowgreen;
+}
+
+button.button#mod {
+    background-color: steelblue;
+}
+
+button.button#inc {
+    background-color: gainsboro;
+}
+
+button.button#dec {
+    background-color: hotpink;
+}

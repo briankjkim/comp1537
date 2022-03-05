@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brian's Magic Calculator!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="magic_calc">
+        <div id="title_box">
+            <h1>BRIAN's Magic Calculator</h1>
+        </div>
+        <div class="operand">
+            <label for="x">Give me the first number!</label>
+            <input type="text" id="x" placeholder="0"/>
+        </div>
+        <div class="operand">
+            <label for="y">And the second number, please!</label>
+            <input type="text" id="y" placeholder="0"/>
+        </div>
+        <div id="buttons_display">
+            <button class="button" id="add"> + </button>
+            <button class="button" id="sub"> - </button>
+            <button class="button" id="mul"> * </button>
+            <button class="button" id="div"> / </button>
+            <button class="button" id="exp"> ^ </button>
+            <button class="button" id="mod"> % </button>
+            <button class="button" id="inc"> &#8593; </button>
+            <button class="button" id="dec"> &#8595; </button>
+        </div>
+        <div id="result_box">
+            <p id="result"></p>
+        </div>
+        <div id="history_box">
+            <h2>YOU SHALL SEE THE PAST</h2>
+            <div id="history"></div>
+            <button class="show_button" id="show"> SHOW </button>
+            <button class="show_button" id="hide"> HIDE </button>
+        </div>
+    </div>
+</body>
+</html>
