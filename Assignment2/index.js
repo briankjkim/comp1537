@@ -5,7 +5,7 @@ received_object = null;
 
 
 function display(current_page_id, page_size) {
-    $("results").empty();
+
     for (i = page_size * (current_page_id - 1); i < (page_size * (current_page_id - 1) + page_size); i++) {
 
         $("#results").append(received_object.results[i].original_title + "<br>");
