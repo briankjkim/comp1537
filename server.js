@@ -7,6 +7,7 @@ mongoose.connect("mongodb+srv://kkjin0330:jo9hlg52iYr686x9@cluster0.msyad.mongod
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+
 const unicornSchema = new mongoose.Schema({
     name: String,
     weight: Number,

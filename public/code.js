@@ -9,7 +9,7 @@ function findUnicornByName() {
     console.log($("#unicornName").val())
 
     $.ajax({
-        url: "http://localhost:5000/findUnicornByName",
+        url: "https://blooming-anchorage-33176.herokuapp.com/findUnicornByName",
         type: "POST",
         data: {
             "unicornName": $("#unicornName").val()
@@ -32,7 +32,7 @@ function findUnicornByFood() {
         appleIsChecked = "checked"
 
     $.ajax({
-        url: "http://localhost:5000/findUnicornByFood",
+        url: "https://blooming-anchorage-33176.herokuapp.com/findUnicornByFood",
         type: "POST",
         data: {
             "appleIsChecked": appleIsChecked,
