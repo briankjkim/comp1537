@@ -3,7 +3,7 @@ const app = express()
 const bodyparser = require("body-parser");
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://kkjin0330:jo9hlg52iYr686x9@cluster0.msyad.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://kkjin0330:jo9hlg52iYr686x9@cluster0.msyad.mongodb.net/hello?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
