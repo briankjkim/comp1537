@@ -9,7 +9,7 @@ td {
     border: 1px solid;
 }
 
-/* div#searches {
+div#searches {
     width: 75%;
     float: left;
 }
@@ -22,4 +22,4 @@ div#filters {
 div#result {
 
     clear: both;
-} */
+}
