@@ -1,7 +1,5 @@
 received_data = null;
 
-
-
 function resetPage() {
     $('#unicornNameFilter').prop('checked', false);
     $('#unicornWieghtFilter').prop('checked', false);
@@ -47,7 +45,7 @@ function process_res(data) {
         result += "<table>"
         result += "<tr>"
         // display headers for data field
-        for (field in data[i]){
+        for (field in data[i]) {
             result += "<th>"
             result += field
             result += "</th>"
@@ -56,17 +54,17 @@ function process_res(data) {
         result += "/<tr>"
         // display information about unicorns
         result += "<tr>"
-        for (field in data[i]){
+        for (field in data[i]) {
             result += "<td>"
-            if(field == "loves"){
+            if (field == "loves") {
                 result += "<ul>"
-                for(j = 0; j < data[i]["loves"].length; j++){
+                for (j = 0; j < data[i]["loves"].length; j++) {
                     result += "<li>"
                     result += data[i][field][j]
                     result += "</li>"
                 }
                 result += "</ul>"
-            }else{
+            } else {
                 result += data[i][field]
             }
             result += "</td>"
@@ -83,11 +81,11 @@ function process_res(data) {
 
 
 function findUnicornByWeight() {
-    console.log("findByUnicornWeight" + "got called!");
+    console.log("findUnicornByWeight" + "got called!");
     console.log($("#lowerWeight").val());
     $.ajax({
-        url: 'https://blooming-anchorage-33176.herokuapp.com/findByUnicornWeight',
-        // url: 'http://localhost:5000/findByWeight',
+        url: 'https://blooming-anchorage-33176.herokuapp.com/findUnicornByWeight',
+        // url: 'http://localhost:5000/findUnicornByWeight',
         type: 'POST',
         data: {
             "lowerWeight": $("#lowerWeight").val(),
