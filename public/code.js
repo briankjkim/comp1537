@@ -48,7 +48,7 @@ function process_res(data) {
         result += "<tr>"
 
         // add header?
-        
+
         for (field in data[i]){
             result += "<td>"
             result += data[i][field]
@@ -59,9 +59,9 @@ function process_res(data) {
         result += "</table>"
 
     }
-
-    data = JSON.stringify(JSON.parse(data), null, 4);
-    $("#result").html("<pre>" + data + "</pre>");
+    $("#result").html(result)
+    // data = JSON.stringify(JSON.parse(data), null, 4);
+    // $("#result").html("<pre>" + data + "</pre>");
 }
 
 
@@ -69,8 +69,8 @@ function findByWeight() {
     console.log("findByWeight" + "got called!");
     console.log($("#lowerWeight").val());
     $.ajax({
-        // url: 'https://blooming-anchorage-33176.herokuapp.com/findByWeight',
-        url: 'http://localhost:5000/findByWeight',
+        url: 'https://blooming-anchorage-33176.herokuapp.com/findByWeight',
+        // url: 'http://localhost:5000/findByWeight',
         type: 'POST',
         data: {
             "lowerWeight": $("#lowerWeight").val(),
@@ -89,8 +89,8 @@ function findUnicornByName() {
     console.log($("#unicornName").val())
 
     $.ajax({
-        // url: "https://blooming-anchorage-33176.herokuapp.com/findUnicornByName",
-        url: 'http://localhost:5000/findUnicornByName',
+        url: "https://blooming-anchorage-33176.herokuapp.com/findUnicornByName",
+        // url: 'http://localhost:5000/findUnicornByName',
         type: "POST",
         data: {
             "unicornName": $("#unicornName").val()
@@ -115,8 +115,8 @@ function findUnicornByFood() {
         appleIsChecked = "checked"
 
     $.ajax({
-        // url: "https://blooming-anchorage-33176.herokuapp.com/findUnicornByFood",
-        url: 'http://localhost:5000/findUnicornByFood',
+        url: "https://blooming-anchorage-33176.herokuapp.com/findUnicornByFood",
+        // url: 'http://localhost:5000/findUnicornByFood',
         type: "POST",
         data: {
             "appleIsChecked": appleIsChecked,
