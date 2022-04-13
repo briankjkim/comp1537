@@ -54,10 +54,21 @@ function process_res(data) {
 
         }
         result += "/<tr>"
+        // display information about unicorns
         result += "<tr>"
         for (field in data[i]){
             result += "<td>"
-            result += data[i][field]
+            if(field == "loves"){
+                result += "<ul>"
+                for(j = 0; j < data[i]["loves"].length; j++){
+                    result += "<li>"
+                    result += data[i][field][j]
+                    result += "</li>"
+                }
+                result += "</ul>"
+            }else{
+                result += data[i][field]
+            }
             result += "</td>"
 
         }
