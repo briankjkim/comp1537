@@ -46,9 +46,15 @@ function process_res(data) {
         // for each unicorn
         result += "<table>"
         result += "<tr>"
+        // display headers for data field
+        for (field in data[i]){
+            result += "<th>"
+            result += field
+            result += "</th>"
 
-        // add header?
-
+        }
+        result += "/<tr>"
+        result += "<tr>"
         for (field in data[i]){
             result += "<td>"
             result += data[i][field]
