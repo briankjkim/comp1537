@@ -5,20 +5,20 @@ received_object = null;
 
 
 function display(current_page_id, page_size) {
-
+    call_ajax
     for (i = page_size * (current_page_id - 1); i < (page_size * (current_page_id - 1) + page_size); i++) {
 
         $("#results").append(received_object.results[i].original_title + "<br>");
 
         $("#results").append(received_object.results[i].overview + "<br>");
-        x = received_object.results[i].poster_path 
-        image_html =`<img src='https://image.tmdb.org/t/p/w500/${x}'>`
+        x = received_object.results[i].poster_path
+        image_html = `<img src='https://image.tmdb.org/t/p/w500/${x}'>`
         $("#results").append(image_html + "<br>");
 
         z = `<button id="${received_object.results[i].backdrop_path}" class="backdrop_button"> backdrop image!</button>`
         $("#results").append(z + "<br>");
     }
-    
+
     paginate_menu();
 }
 
