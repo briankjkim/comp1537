@@ -82,11 +82,11 @@ function process_res(data) {
 }
 
 
-function findByWeight() {
-    console.log("findByWeight" + "got called!");
+function findUnicornByWeight() {
+    console.log("findByUnicornWeight" + "got called!");
     console.log($("#lowerWeight").val());
     $.ajax({
-        url: 'https://blooming-anchorage-33176.herokuapp.com/findByWeight',
+        url: 'https://blooming-anchorage-33176.herokuapp.com/findByUnicornWeight',
         // url: 'http://localhost:5000/findByWeight',
         type: 'POST',
         data: {
@@ -150,7 +150,7 @@ function findUnicornByFood() {
 function setup() {
     $("#findUnicornByName").click(findUnicornByName)
     $("#findUnicornByFood").click(findUnicornByFood)
-    $("#findUnicornByWeight").click(findByWeight)
+    $("#findUnicornByWeight").click(findUnicornByWeight)
     $("#filter").click(filter_f)
     $("#filters").hide()
 }

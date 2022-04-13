@@ -84,12 +84,21 @@ app.post("/findUnicornByFood", function (req, res) {
 
 })
 
+app.post("/findUnicornByWeight", function (req, res) {
+    console.log("req. has been received")
+    console.log(req.body.lowerWeight)
+    console.log(req.body.higherWeight)
 
+    unicornModel.find({
+        weight: {$gt: req.body.lowerWeight},
+        weight: {$lt: req.body.higherWeight}
+    }, function (err, unicorns) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Data " + unicorns);
+        }
+        res.json(unicorns);
+    });
+})
 
-// app.get('/', function(req, res) {
-//     res.sendFile(__dirname + "./index.html");
-// })
-
-// app.get('/code.js', function(req, res) {
-//     res.sendFile(__dirname + "/code.js");
-// })
