@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+div#searches {
+    width: 75%;
+    float: left;
+}
+
+div#filters {
+    width: 25%;
+    float: left;
+}
+
+div#result {
+
+    clear: both;
+}
